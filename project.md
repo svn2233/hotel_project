@@ -44,9 +44,9 @@ SELECT * FROM meal;
 ```
 WITH hotels AS (
 SELECT * FROM hotel_project.`2018`
-UNION
+UNION ALL
 SELECT * FROM hotel_project.`2019`
-UNION
+UNION ALL
 SELECT * FROM hotel_project.`2020`
 )
 SELECT * FROM hotels;
@@ -57,9 +57,9 @@ SELECT * FROM hotels;
 ```
 WITH hotels AS (
 SELECT * FROM hotel_project.`2018`
-UNION
+UNION ALL
 SELECT * FROM hotel_project.`2019`
-UNION
+UNION ALL
 SELECT * FROM hotel_project.`2020`
 )
 SELECT round((stays_in_week_nights + stays_in_weekend_nights)*adr,2) revenue FROM hotels;
@@ -70,9 +70,9 @@ SELECT round((stays_in_week_nights + stays_in_weekend_nights)*adr,2) revenue FRO
 ```
 WITH hotels AS (
 SELECT * FROM hotel_project.`2018`
-UNION
+UNION ALL
 SELECT * FROM hotel_project.`2019`
-UNION
+UNION ALL
 SELECT * FROM hotel_project.`2020`
 )
 SELECT arrival_date_year,
@@ -85,9 +85,9 @@ GROUP BY 1;
 ```
 WITH hotels AS (
 SELECT * FROM hotel_project.`2018`
-UNION
+UNION ALL
 SELECT * FROM hotel_project.`2019`
-UNION
+UNION ALL
 SELECT * FROM hotel_project.`2020`
 )
 SELECT arrival_date_year,
@@ -102,9 +102,9 @@ ORDER BY 2;
 ```
 WITH hotels AS (
 SELECT * FROM hotel_project.`2018`
-UNION
+UNION ALL
 SELECT * FROM hotel_project.`2019`
-UNION
+UNION ALL
 SELECT * FROM hotel_project.`2020`
 )
 SELECT arrival_date_week_number,arrival_date_year,arrival_date_month
@@ -120,9 +120,9 @@ ORDER BY 1 DESC,2,3;
 ```
 WITH hotels AS (
 SELECT * FROM hotel_project.`2018`
-UNION
+UNION ALL
 SELECT * FROM hotel_project.`2019`
-UNION
+UNION ALL
 SELECT * FROM hotel_project.`2020`
 )
 SELECT * FROM hotels
@@ -135,9 +135,9 @@ ON hotels.market_segment=market.market_segment;
 ```
 WITH hotels AS (
 SELECT * FROM hotel_project.`2018`
-UNION
+UNION ALL
 SELECT * FROM hotel_project.`2019`
-UNION
+UNION ALL
 SELECT * FROM hotel_project.`2020`
 )
 SELECT * FROM hotels
