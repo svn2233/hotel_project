@@ -16,12 +16,12 @@
 3. During the visualizing stage I will be able to answer the given questions presented
 4. I will visualize the data in both PowerBI and Tableau to showcase my skill in both BI tool 
 
-#### 1a. Using UNION to see union hotel years 2018-2020 for easier analysis and queries.
+#### 1a. Using UNION ALL to see combine hotel years 2018-2020 for easier analysis and queries.
 ```
 SELECT * FROM hotel_project.`2018`
-UNION
+UNION ALL
 SELECT * FROM hotel_project.`2019`
-UNION
+UNION ALL
 SELECT * FROM hotel_project.`2020`;
 ```
 ![](/1a.png)<!-- -->
