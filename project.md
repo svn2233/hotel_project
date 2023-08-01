@@ -1,10 +1,10 @@
-# Hotel Project using SQL, Excel & BI tools 
+# Hotel Project using SQL, Excel & Tableau
 
 ## Introduction
 In this project I will use MySQL to explore and analyze data and then visualize the data in Tableau to provide insights to the stakeholders. The dataset is available on Kaggle, which is a website that offeres free public datasets.
 
 ## Objective
-As a data analyst hired by the hotel company to enhance their hotel businesses, my primary focus is to compare their City Hotels with their Resort Hotels. The stakeholders are relying on data-driven insights from me to make informed decisions. Here are some of the questions I will answer:
+In this project, I assume the role of a data analyst hired by the hotel company to enhance their hotel businesses, my primary focus is to compare their City Hotels with their Resort Hotels. The stakeholders are relying on data-driven insights from me to make informed decisions. Here are some of the questions I will answer:
 
 1. Is hotel revenue growing by year? 
 2. Should the hotel increase parking size?
@@ -161,8 +161,6 @@ meal ON hotels.meal=meal.meal;
 [Tableau Link To Dashboard](https://public.tableau.com/views/Hotel_Project_Tableau_16903284335380/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link)
 
 ![](images/a.png)<!-- -->
-
-***PowerBI link coming soon...***
 
 ## Final Insights
 * The hotels have earned a total of $29.1M with an average discount of 25.8% and an Average Daily Rate of $104.50 from 2018 to Sep. 2020.
